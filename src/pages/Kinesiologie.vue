@@ -4,10 +4,10 @@
             <a href="#kinesiologie">Qu'est-ce que la kinésiologie ?</a>
         </button>
         <button>
-            <a href="">Pour qui ? Pour quoi ?</a>
+            <a href="#pour-qui">Pour qui ? Pour quoi ?</a>
         </button>
         <button>
-            <a href="">Kinésiologie et émotions</a>
+            <a href="#emotions">Kinésiologie et émotions</a>
         </button>
     </div>
     <div class="grid_two w-100" id="kinesiologie">
@@ -33,7 +33,7 @@
             <h3>Transformer vos blessures en une véritable force, dans votre vie.</h3>
         </div>
     </div>
-    <div class="for-what">
+    <div class="for-what" id="pour-qui">
         <div>
             <h2>La kinésiologie pour qui, pour quoi ?</h2>
             <p>Ma kinésiologie s'adresse à tous et à chaque étape de la vie : </p>
@@ -63,7 +63,7 @@
             </ul>
         </div>
     </div>
-    <div class="grid_four w-100">
+    <div class="grid_four w-100" id="emotions">
         <div>
             <h2>La Kinésiologie et les émotions</h2>
             <p class="line-height">L'émotion est un signal d'alarme.</p>
