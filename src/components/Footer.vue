@@ -129,6 +129,11 @@ const router = useRouter()
   gap: 20px;
   padding: 2%;
 }
+@media screen and (max-width: 768px) {
+    .parallax {
+        height: auto;
+    }
+}
 .name_infos {
     display: flex;
     flex-direction: column;
@@ -192,6 +197,12 @@ a {
     justify-content: center;
     gap: 20rem;
     align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+    .cabinets {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 .cabinet {
     display: flex;
