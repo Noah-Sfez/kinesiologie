@@ -86,6 +86,12 @@
     background-color: #b9d6da;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+    .bandeau_nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 button {
   border-radius: 30px;
   border: none;
@@ -106,8 +112,18 @@ a {
     gap: 20px;
     padding: 2% 20%;
 }
+@media screen and (max-width: 768px) {
+    .grid_two {
+        grid-template-columns: 1fr;
+        padding: 2% 5%;
+        grid-template-areas: 
+            "text"
+            "image";
+    }
+}
 .grid_two img {
     width: 100%;
+    grid-area: image;
 }
 .grid_two > div {
     display: flex;
@@ -116,11 +132,17 @@ a {
     padding: 7% 5%;
     background-color: #f2f2f2;
     box-shadow: 2px 2px 5px #00000073;
+    grid-area: text;
 }
 h2 {
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
+}
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 ul {
     list-style-type: none;
@@ -150,14 +172,27 @@ h3 {
     gap: 2px;
     font-size: 1.2rem;
 }
+@media screen and (max-width: 768px) {
+    .for-what > div {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+}
 .for-what h2 {
     font-size: 2.8rem;
     font-weight: 300;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+    .for-what h2 {
+        font-size: 1.8rem;
+    }
+}
 .for-what ul {
     list-style-type: circle;
     padding: 1%;
+    margin-left: 10%;
 }
 .for-what ul li {
     margin-bottom: 5px;
@@ -176,6 +211,16 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+@media screen and (max-width: 768px) {
+    .grid_four {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "text1"
+            "image1"
+            "text2"
+            "image2";
+    }
+}
 .grid_four img {
     width: 100%;
 }
@@ -186,6 +231,11 @@ h3 {
     padding: 0% 20%;
     background-color: #fcf8ed;
     font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+    .grid_four > div {
+        padding: 5%;
+    }
 }
 .grid_four h2 {
     margin-bottom: 30px;
