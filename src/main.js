@@ -13,7 +13,6 @@ import Seances from "./pages/Seances.vue";
 import Contact from "./pages/Contact.vue";
 import Deontologie from "./pages/Deontologie.vue";
 
-// Configuration des routes
 const routes = [
     { path: "/", component: Home }, // Page d'accueil
     { path: "/la-kinesiologie", component: Kinesiologie }, // Page de la kinésiologie
