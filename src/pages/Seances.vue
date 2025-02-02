@@ -112,6 +112,13 @@
     background-color: #b9d6da;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+    .bandeau_nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
 button {
   border-radius: 30px;
   border: none;
@@ -119,6 +126,12 @@ button {
   padding: 0.5%;
   background-color: #fffdf3;
   transition: ease-in-out 0.1s;
+}
+@media screen and (max-width: 768px) {
+    button {
+        padding: 2% 5%;
+        width: fit-content;
+    }
 }
 a {
   text-decoration: none;
@@ -132,14 +145,31 @@ a {
     gap: 20px;
     padding: 1%;
 }
+@media screen and (max-width: 768px) {
+    .grid_tier {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "text";
+    }
+}
 .grid_tier_reverse {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 20px;
     padding: 1%;
 }
+@media screen and (max-width: 768px) {
+    .grid_tier_reverse {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "image"
+            "texte";
+    }
+}
 .grid_tier_reverse img {
     width: 100%;
+    grid-area: image;
 }
 .mains {
     width: 100%;
@@ -152,9 +182,21 @@ a {
     background-color: #f2f2f2;
     box-shadow: 2px 2px 5px #00000073;
 }
+@media screen and (max-width: 768px) {
+    .deroulement {
+        padding: 7% 5%;
+        box-shadow: none;
+    }
+}
 .deroulement p, .tarifs p {
     line-height: 1.2;
     font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+    .deroulement p, .tarifs p {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
 }
 h2 {
     font-size: 2rem;
@@ -180,6 +222,13 @@ li {
     background-color: #f2f2f2;
     box-shadow: 2px 2px 5px #00000073;
 }
+@media screen and (max-width: 768px) {
+    .tarifs {
+        padding: 7% 5%;
+        grid-area: texte;
+        box-shadow: none;
+    }
+}
 .neuilly img {
     width: 100%;
 }
@@ -190,8 +239,20 @@ li {
     align-items: center;
     font-size: 3rem;
 }
+@media screen and (max-width: 768px) {
+    .neuilly div {
+        font-size: 2rem;
+        padding: 20px;
+        align-items: start;
+    }
+}
 .neuilly h2 {
     font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+    .neuilly h2 {
+        font-size: 2rem;
+    }
 }
 .origyn img {
     width: 100%;
@@ -204,12 +265,25 @@ li {
     background-color: #f2f2f2;
     box-shadow: 2px 2px 5px #00000073;
 }
+@media screen and (max-width: 768px) {
+    .origyn div {
+        padding: 7% 5%;
+        font-size: 1rem;
+        box-shadow: none;
+    }
+}
 .origyn h2 {
     font-size: 2.5rem;
 }
 .origyn p {
     line-height: 1.2;
     font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+    .origyn p {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
 }
 .cabinet_origyn img {
     width: 100%;
@@ -224,5 +298,15 @@ li {
 }
 .cabinet_origyn h2 {
     font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+    .cabinet_origyn div {
+        font-size: 2rem;
+        padding: 20px;
+        align-items: start;
+    }
+    .cabinet_origyn h2 {
+        font-size: 2rem;
+    }
 }
 </style>
