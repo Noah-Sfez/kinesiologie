@@ -1,7 +1,6 @@
 <template>
     <div>
         <h2>En cours de création</h2>
-        <!-- From Uiverse.io by Fernando-sv --> 
 <div class="loader"></div>
     </div>
 </template>
