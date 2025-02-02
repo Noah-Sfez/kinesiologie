@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import "./styles/style.css";
 import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";
+import "leaflet/dist/leaflet.css";
 
 // Importation des pages (ou lazy-loading si besoin)
 import Home from "./pages/Home.vue";
@@ -13,7 +14,6 @@ import Seances from "./pages/Seances.vue";
 import Contact from "./pages/Contact.vue";
 import Deontologie from "./pages/Deontologie.vue";
 
-// Configuration des routes
 const routes = [
     { path: "/", component: Home }, // Page d'accueil
     { path: "/la-kinesiologie", component: Kinesiologie }, // Page de la kinésiologie
