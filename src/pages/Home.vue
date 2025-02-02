@@ -27,7 +27,7 @@
       </div>
       <div class="b-color-blue-ciel">
         <p>Prendre un Rendez-vous</p>
-        <div>
+        <div class="align-center">
           <button>
             <a href="tel:0616391852" style="display: flex; justify-content: center; align-items: center; gap: 5px;">
               <svg data-bbox="25.849 20.098 148.61 159.903" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 200 200" data-type="shape">
@@ -61,6 +61,11 @@
   align-items: flex-start;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .parallax {
+    height: auto;
+  }
+}
 .citation {
   background-color: rgba(238, 238, 238, 0.69);
   padding: 1.8%;
@@ -73,6 +78,12 @@
   flex-direction: column;
   gap: 10px;
   margin: 3% 0% 0% 20%;
+}
+@media screen and (max-width: 768px) {
+  .citation {
+    margin: 5%;
+    font-size: 1.2rem;
+  }
 }
 .text-end {
   text-align: end;
@@ -95,6 +106,13 @@
   gap: 20px;
   width: 60%;
 }
+@media screen and (max-width: 768px) {
+  .grid_four {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+}
 .grid_four > div {
   display: flex;
   flex-direction: column;
@@ -105,6 +123,15 @@
   font-size: 2rem;
   font-family: 'Dancing Script', cursive;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .grid_four > div {
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    height: auto;
+    width: 100%;
+    gap: 20px;
+  }
 }
 .b-color-blue-vert {
   background-color: #355a5f;
@@ -130,13 +157,34 @@ button {
   background-color: #fffdf3;
   transition: ease-in-out 0.1s;
 }
+@media screen and (max-width: 768px) {
+  button {
+    padding: 5px 10px;
+  }
+}
 button:hover {
   padding: 4% 8%;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  button:hover {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
 }
 a {
   text-decoration: none;
   color: inherit;
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  a {
+    font-size: 0.8rem;
+  }
+}
+.align-center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 </style>
