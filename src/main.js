@@ -2,7 +2,6 @@ import { createApp } from "vue";
 import "./styles/style.css";
 import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";
-import "leaflet/dist/leaflet.css";
 
 // Importation des pages (ou lazy-loading si besoin)
 import Home from "./pages/Home.vue";
